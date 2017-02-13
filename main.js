@@ -15,29 +15,33 @@
 // 1. A key that specifies the height of the pine tree.
 // 2. The value for the height of the tree should be from user input in 
 // 	a `<input type="text">` field in the DOM.
-document.getElementById("treeHeight").value;
-
+function myTreeHeight() {
+	var height = document.getElementById("treeHeight").value;
+	console.log("ohmytreeHeight", height);
+}
 // 3. A key that specifies which character to use to build the pine tree.
 // 4. The character to use should be from user input in 
 // 	a `<input type="text">` field in the DOM.
-document.getElementById("treeChar").value;
-
+function myTreeChar() {
+	var char = document.getElementById("treeChar").value;
+	console.log("ohmytreeChar", char);
+}
 // Once the user enters in a number, and a character, the user can either 
 // then just press the enter key _(as long as the cursor is in one of the 
 // input fields)_, or click a button that is labeled "Grow your tree" and 
 // the tree should be shown in the console. This requires you to add an 
 // event listener to the button, as well as an event listener for the 
 // enter/return key.
-growTree.addEventListener(submit, listener[, click]);
+growTree.addEventListener(submit, listener, [click]);
 
 var air = " ";
-function growTree (){
-	for (var i = 0; i < treeHeight.length; i++) {
-		if (treeHeight - (i + 1) > 0) {
+function growTree() {
+	for (var i = 0; i < height; i++) {
+		if (height - (i + 1) > 0) {
 			air += " ";
 		}
-		if ( ( 2 * i ) + 1 !== treeHeight.length) {
-			treeChar += treeChar;
+		if ( ( 2 * i ) + 1 !== height) {
+			char += char;
 		}
 		console.log(air + treeChar);
 	}
