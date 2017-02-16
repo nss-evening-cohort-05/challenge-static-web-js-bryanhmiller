@@ -51,6 +51,7 @@ function passTreeSpecs(){
 // that both fields must have a value.
 	if(treeSpecs.height < 1 || treeSpecs.char === "") {
 		alert("Please enter a value!");
+		console.log("alert run");
   	}
 	growTree(treeSpecs);
 }
