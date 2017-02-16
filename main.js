@@ -30,7 +30,6 @@ function myTreeHeight() {
 
 function myTreeChar() {
 	treeSpecs.char = document.getElementById("treeChar").value;
-	console.log("myTreeChar",treeSpecs.char);
 }
 
 // Once the user enters in a number, and a character, the user can either 
